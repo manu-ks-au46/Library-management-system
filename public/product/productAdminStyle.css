@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    /* border: 1px solid; */
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap:6px;
+    flex-direction: row;
+}

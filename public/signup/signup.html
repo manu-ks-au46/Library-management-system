@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="signupstyle.css">
+    <script src="signup.js"></script>
+    <title>Library||signup</title>
+</head>
+<body>
+    <div class="container">
+        <main class="signup-container">
+          <p class="text-mute">START FOR FREE</p>
+          <h1 class="heading-primary">Create new account<span class="custom-dot">.</span></h1>
+          <p class="text-mute">Already A Member? <a href="../login/login.html">Log in</a></p>
+          <form class="signup-form" action="/users/signup" method="post">
+              <label for="userName" class="inp">
+                <input id="userName" name="userName" type="text" class="input-text" placeholder="&nbsp;">
+                <span class="label">User name</span>
+              </label>
+            <label for="email" class="inp">
+              <input id="email" name="email" type="email" class="input-text" placeholder="&nbsp;">
+              <span class="label">Email</span>
+            </label>
+            <label for="password" class="inp">
+              <input type="password" class="input-text" placeholder="&nbsp;" id="password" name="password">
+              <span class="label">Password</span>
+            </label>
+            <label for="confirmPassword" class="inp">
+                <input type="password" class="input-text" placeholder="&nbsp;" id="confirmPassword" name="confirmPassword">
+                <span class="label">Confirm Password</span>
+              </label>
+            <button onclick="signUp()" id="btn" class="btn btn-signup">Create account</button>
+            <!-- <input onclick="signUp() "type="submit" id="submitDetails"  name="submitDetails" value="Submit Your Details" /><br> -->
+          </form>
+        </main>
+        <div class="welcome-container">
+          <h1 class="heading-secondary">Welcome to <span class="lg"><br>My Library!</span></h1>
+        </div>
+      </div>
+<script src="../signup/signup.js" defer></script>  
+</body>
+</html>
