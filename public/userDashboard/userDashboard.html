@@ -14,6 +14,39 @@
     </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hello Welcome to My Library</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                        href="/public/adminDashboard/adminDashboard.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Watch all Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Learn more about us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact us for more</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Find outWhy our library is popular across the world</a>
+                </li>
+                <form class="d-flex" action="/users/logout" method="post">
+                    <!-- <button onclick="logOut()" type="submit"></button> -->
+                    <input class="form-control me-2 btn-danger" type="submit" value="Logout" aria-label="Search">
+                </form>
+        </div>
+    </div>
+</nav>
   <div class="container">
     <h1>Book List..........</h1>
  <table class="table table-bordered">
