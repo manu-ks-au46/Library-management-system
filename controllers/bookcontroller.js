@@ -58,7 +58,7 @@ try {
         console.log(cloudinaryResponse);
         bookData.imageUrl = cloudinaryResponse.secure_url
       }
-      //pdf 
+      
       
     const data = await BookModel.create(bookData)
     res.status(201).send({status : 'success',msg:'Book added successfully to Database' ,book:data})
@@ -95,25 +95,10 @@ const deleteBooks = async (req,res) => {
 
 
 }
-//download the file
-const downloadBook = async (req,res) => {
-    const {bookId} = req.params
-    try {
-        const downloadfile = await BookModel.findById(bookId)
-        res.download();
-        res.status(201).send({status : 'success',msg:'Book Downloaded successfully'})
-        
-    } catch (error) {
-        res.status(500).send({status : 'error',msg:'error Downloading book from database'}) 
-    }
-    
-}
-
 module.exports = {
     getBooks,
     getBooksbyId,
     postBooks,
     updateBooks,
     deleteBooks,
-    downloadBook
 }

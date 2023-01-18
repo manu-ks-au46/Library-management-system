@@ -16,8 +16,6 @@ bookRouter.use(verifyToken)
 
 bookRouter.get('/', getBooks)
 bookRouter.get('/:bookId', getBooksbyId)
-//download book is pending here
-bookRouter.get('/:bookId/download', downloadBook)
 
 //review for users
 

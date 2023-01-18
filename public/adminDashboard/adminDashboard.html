@@ -40,6 +40,7 @@
                         <a class="nav-link" href="#">Find outWhy our library is popular across the world</a>
                     </li>
                     <form class="d-flex" action="/users/logout" method="post">
+                        <!-- <button onclick="logOut()" type="submit"></button> -->
                         <input class="form-control me-2 btn-danger" type="submit" value="Logout" aria-label="Search">
                     </form>
             </div>
@@ -84,18 +85,19 @@
                 <input id="image" type="file" name="image" required>
             </div>
             <br><br>
-            <!-- <div class="input-group-text input-group-text">
-                <label for="pdf">Add Pdf File</label>
-                <input id="pdf" type="file" name="pdfUrl" required>
-            </div> -->
             <div>
-                <!-- <button onclick="addBook()" class="btn btn-success" id="btn" type="submit">Submit Book</button> -->
-                <input class="button btn btn-success" type="submit" value="SubmitBook">
+                <button onclick="addBook()" class="btn btn-success" id="btn" type="submit">Submit Book</button>
+                <!-- <input class="button btn btn-success" type="submit" value="SubmitBook"> -->
             </div>
 
         </form>
     </div>
     <br><br>
+    <!-- <a href='../product/productAdmin.html'> -->
+        <!-- <button>
+            View & edit Books
+        </button>
+    </a> -->
     <table class="table table-bordered">
         <thead class="thered-dark">
             <tr>
@@ -108,8 +110,68 @@
         <tbody>
             <tr>
                 <th scope="row">1</th>
-                <td>shaksphere</td>
+                <td>Utopia</td>
+                <td>Sir Thomas Moor</td>
+                <td class="text-center">
+                    <a href="/public/product/productUser.html" type="button" class="btn btn-dark btn-small"><i class="bi bi-eye"></i>View</a>
+                    <a href="#" type="button" class="btn btn-primary btn-small"><i class="bi bi-pencil"></i>Edit</a>
+                    <a href="#" type="button" class="btn btn-danger btn-small"><i class="bi bi-person-x"></i>Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Adventures of Sherlock Holmes</td>
                 <td>conen doyle</td>
+                <td class="text-center">
+                    <a href="/public/product/productUser.html" type="button" class="btn btn-dark btn-small"><i class="bi bi-eye"></i>View</a>
+                    <a href="#" type="button" class="btn btn-primary btn-small"><i class="bi bi-pencil"></i>Edit</a>
+                    <a href="#" type="button" class="btn btn-danger btn-small"><i class="bi bi-person-x"></i>Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>The Merchant of Venice</td>
+                <td>Shakespeare</td>
+                <td class="text-center">
+                    <a href="/public/product/productUser.html" type="button" class="btn btn-dark btn-small"><i class="bi bi-eye"></i>View</a>
+                    <a href="#" type="button" class="btn btn-primary btn-small"><i class="bi bi-pencil"></i>Edit</a>
+                    <a href="#" type="button" class="btn btn-danger btn-small"><i class="bi bi-person-x"></i>Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Adventures of Sherlock Holmes</td>
+                <td>conen doyle</td>
+                <td class="text-center">
+                    <a href="/public/product/productUser.html" type="button" class="btn btn-dark btn-small"><i class="bi bi-eye"></i>View</a>
+                    <a href="#" type="button" class="btn btn-primary btn-small"><i class="bi bi-pencil"></i>Edit</a>
+                    <a href="#" type="button" class="btn btn-danger btn-small"><i class="bi bi-person-x"></i>Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>The Merchant of Venice</td>
+                <td>Shakespeare</td>
+                <td class="text-center">
+                    <a href="/public/product/productUser.html" type="button" class="btn btn-dark btn-small"><i class="bi bi-eye"></i>View</a>
+                    <a href="#" type="button" class="btn btn-primary btn-small"><i class="bi bi-pencil"></i>Edit</a>
+                    <a href="#" type="button" class="btn btn-danger btn-small"><i class="bi bi-person-x"></i>Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Adventures of Sherlock Holmes</td>
+                <td>conen doyle</td>
+                <td class="text-center">
+                    <a href="/public/product/productUser.html" type="button" class="btn btn-dark btn-small"><i class="bi bi-eye"></i>View</a>
+                    <a href="#" type="button" class="btn btn-primary btn-small"><i class="bi bi-pencil"></i>Edit</a>
+                    <a href="#" type="button" class="btn btn-danger btn-small"><i class="bi bi-person-x"></i>Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>The Merchant of Venice</td>
+                <td>Shakespeare</td>
                 <td class="text-center">
                     <a href="/public/product/productUser.html" type="button" class="btn btn-dark btn-small"><i class="bi bi-eye"></i>View</a>
                     <a href="#" type="button" class="btn btn-primary btn-small"><i class="bi bi-pencil"></i>Edit</a>

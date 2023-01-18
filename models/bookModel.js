@@ -12,7 +12,7 @@ const bookSchema = new Schema({
       type: Number,
       unique: true,
       min: 1,
-      max: 13,
+      max: 100000,
      },
   authorName: {
      type: String,

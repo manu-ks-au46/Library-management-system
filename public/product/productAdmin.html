@@ -4,96 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="productAdminStyle.css">
-    <title>ManageBook||MyLibrary</title>
+    <title>Manage product||admin</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Hello Welcome to My Library</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="/public/adminDashboard/adminDashboard.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Watch all Books</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Learn more about us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">contact us for more</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Find outWhy our library is popular across the world</a>
-                    </li>
-                    <form class="d-flex" action="/books/:bookId" method="POST" enctype="multipart/form-data">
-                        <input class="form-control me-2 btn-danger" type="submit" value="Logout" aria-label="Search">
-                    </form>
-            </div>
-        </div>
-    </nav>
-    <h1>EDIT YOUR BOOK HERE ....</h1>
-    <div class="container input-group flex-nowrap">
-        <form action="/books" method="post">
-            <div class="input-group-text">
-                <label for="bookName">book Name</label>
-                <input id="bookName" type="text" name="bookName" placeholder="enter book name" required>
-            </div>
-            <br><br>
-            <div class="input-group-text">
-                <label for="authorName">Author Name</label>
-                <input id="authorName" type="text" name="authorName" placeholder="enter author name" required>
-            </div>
-            <br><br>
-            <br><br>
-            <div class="input-group-text">
-                <label for="publisher">Publisher Name</label>
-                <input id="publisher" type="text" name="publisher" placeholder="enter publisher name" required>
-            </div>
-            <div class="input-group-text">
-                <label for="isbn">ISBN</label>
-                <input id="isbn" type="number" name="ISBN" placeholder="enter ISBN" required>
-            </div>
-            <br><br>
-            <div class="input-group-text">
-                <label for="discription"></label>
-                <textarea id="discription" name="discription" rows="4" cols="50"
-                    placeholder="enter discription of the book" required></textarea>
-            </div>
-            <br><br>
-            <div class="input-group-text">
-                <label for="price">B:₹Price</label>
-                <input id="price" type="number" name="price" placeholder="enter price" required>
-            </div>
-            <br><br>
-            <div class="input-group-text">
-                <label for="image">Add image file</label>
-                <input id="image" type="file" name="imageUrl" required>
-            </div>
-            <br><br>
-            <div class="input-group-text input-group-text">
-                <label for="pdf">Add Pdf File</label>
-                <input id="pdf" type="file" name="pdfUrl" required>
-            </div>
-            <div>
-                <!-- <button class="btn btn-success" id="btn" type="submit">Submit</button> -->
-                <input class="button btn btn-success" type="submit" value="Edit & SubmitBook">
-            </div>
-
-        </form>
-    </div>
-
-    
-<script src="/public/product/productAdmin.js"></script>   
+  <div>
+    <p id="bookName"></p>
+    <p id="authorName"></p>
+  </div>
+  <button id="btn">submit</button>
+<script src="./productAdmin.js"></script>   
 </body>
 </html>
